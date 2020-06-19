@@ -17,16 +17,7 @@ export const TransactionProvider = ({children})=> {
             },
         })
     }
-//this the deleted function
-    function delTransaction(transObj){
-        dispatch({
-            type: "DEL_TRANSACTION",
-            payload: { 
-                amount: transObj.amount, 
-                desc: transObj.desc 
-            },
-        })
-    }
+
 
     return(
         <TransactionContext.Provider value={{

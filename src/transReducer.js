@@ -3,10 +3,6 @@ const TransactionReducer =  ((state, action)=>{
         case "ADD_TRANSACTION": {
             return [action.payload , ...state]
         }
-        //this case is deletion case
-        case "DEL_TRANSACTION":{
-            return [action.payload, ...state]
-        }
         default:
             return state;
     }

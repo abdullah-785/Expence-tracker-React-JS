@@ -3,7 +3,7 @@ import { TransactionContext } from './transContext';
 
 
 function Child() {
-    let { transactions, addTransaction, delTransaction } = useContext(TransactionContext);
+    let { transactions, addTransaction} = useContext(TransactionContext);
     let [newDesc, setDesc] = useState("");
     let [newAmount, setAmount] = useState(0);
 
